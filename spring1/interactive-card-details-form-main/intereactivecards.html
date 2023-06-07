@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="interactive.css">
+</head>
+<body>
+    <main>
+
+        <aside>
+            <img class="imagenFront" src="images/bg-card-front.png" alt="imagen tarjeta delante">
+            <img class="imagenBack"  src="images/bg-card-back.png" alt="imagen tarjeta de atras">
+        </aside>
+
+        <div id="formulario">
+            <form>
+                <label class="nombre">
+                    CARDHOLDER NAME
+                </label>
+                <input class="cajas" type="text" placeholder="e.g Jane Applessed">
+            </form>
+        
+            <form> 
+                <label class="numTarjeta">
+                    CARD NUMBER
+                </label>
+                <input class="cajas" type="number" placeholder="e.g 1234 5678 9123 0000">
+            
+                <label>
+                    EXP.DATE (MM/YY)
+                </label>
+                <input class="cajasDate" type="number" placeholder="MM"> 
+                <label>
+                <input class="cajasDate" type="number" placeholder="YY">
+                </label>
+                <label>
+                    CVC
+                </label>
+                <input class="cajas" type="number" placeholder="e.g 123">
+                <input class="cajaConfirm" type="submit" value="Confirm">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

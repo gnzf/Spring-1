@@ -1,0 +1,163 @@
+*{                                                        /* PARAMETROS POR DEFECTO */
+  font-size: 13px;          
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#contenedor {                                         /* POSICION DE CONTENEDOR Y CAJAS */
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .cajas {
+    position: absolute;
+  }
+
+  #daniel{                                          /* UBICACION DE CADA TARJETA */
+    width: calc(50% - 10px);
+    min-height: calc(50% - 10px);
+    color:hsl(0, 0%, 100%);
+    background: url("./bg-pattern-quotation.svg"), hsl(263, 55%, 52%);
+    background-position: 90% 0;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#jonathan {
+    width: 25%;
+    min-height: calc(50% - 10px);
+    right: 25%;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0.5rem;
+}
+
+#jeanette {
+  width: calc(25% - 10px);
+  bottom: 0;
+  min-height: 50%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius:0.5rem;
+  box-shadow: 0px 10px 15px hsl(0, 0%, 81%);
+}
+
+#patrick {
+  right: 25%;
+  width: 50%;
+  bottom: 0;
+  min-height: 50%;
+  background-color: hsl(219, 29%, 14%);
+  border-radius:0.5rem;
+}
+
+#kira {
+  right: 0;
+  width: calc(25% - 10px);
+  min-height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius:0.5rem;
+  box-shadow: 0px 10px 15px hsl(0, 0%, 81%);
+}
+
+
+.imagen {                                             /* IMAGENES DE LAS PERSONAS */
+  border-radius: 30px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+
+#patrick .imagen, #daniel .imagen {
+  border: 3px solid hsl(263, 71%, 68%);             /* BORDE DE IMAGENES */
+}
+
+h3 {                                                /* NOMBRE DE LAS PERSONAS */
+  padding-inline: 3rem;
+  margin-left: 0,5rem;
+  color:hsl(210, 46%, 95%);
+}
+
+#jeanette h3, #kira h3{
+  padding-inline: 3rem;
+  margin-left: 2rem;
+  color:hsl(0, 0%, 33%);
+}
+
+#jonathan h3 {
+  padding-left: 5rem;
+}
+
+  .verificado {                                     /* VERIFICADO GRADUADO DE LAS TARJETAS */
+      font-weight: lighter;
+      opacity: 50%;
+      color: hsl(210, 46%, 95%);
+      padding-inline: 2rem; 
+      margin-left: 3rem; 
+      font-size: 10px;
+      margin-top: -1rem;
+  }
+
+  .verificado1 {
+      font-weight: lighter;
+      opacity: 50%;
+      color: hsl(0, 0%, 33%);
+      padding-inline: 3rem;
+      margin-left: 2rem; 
+      margin-top: -1rem;
+      font-size: 10px;
+  }
+
+  .verificado2 {
+      font-weight: lighter;
+      opacity: 50%;
+      color: hsl(0, 0%, 60%);
+      padding-inline: 5rem; 
+      font-size: 10px;
+      margin-top: -1rem;
+  }
+
+  .texto {                                        /* TODOS LOS p CON INFORMACION */
+      opacity: 75%;
+      color: hsl(0, 0%, 60%);
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  h4 {                                          /* SUBTITULO DE LAS TARJETAS */
+      color: hsl(0, 0%, 100%);
+      opacity: 70%;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .subtitulo {                                   /* SUBTITULO DE LA TARJETAS CON COLOR ESPECIAL */
+      color: hsl(217, 19%, 35%);
+  }
+
+
+  .tarjetaGrande {                              /* UBICACION DE LAS TARJETAS GRANDES (DANIEL Y PATRICK) */
+      padding-inline: 4rem;
+      margin-left: 1rem; 
+  }
+
+
+  @media screen and (max-width: 375px) {       /* DISEÑO RESPONSIVE PARA MOBILE */
+    .cajas {
+      position: static;
+    }
+
+    #daniel, #jonathan, #jeanette, #patrick, #kira {
+      width: 100%;
+    }
+
+    h4 {
+      margin-top: 2rem;
+    }
+
+    .tarjetaGrande, h3 {
+      padding-top: 1rem;
+    }
+}
