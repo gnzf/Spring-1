@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  @media screen and (min-width: 375px) { 
+    #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50vw;
+        }
+        
+        .asideContainer {
+            width: 100%;
+            height: 50vw;
+            background-position: left bottom;
+            background: linear-gradient(300deg,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+        }
+        
+        #formulario {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15%;
+            margin-left: 25%;
+            padding: 0;
+            width: 50%;
+            text-align: start;
+        }
+        
+        
+        .containerImagenFront {
+            width: 447px;
+            height: 247px;
+            background: url("./images/bg-card-front.png");
+            background-repeat: no-repeat;
+            margin-top: 8rem;
+            margin-left: 2rem;
+            border-radius: 10px;
+        }
+        
+        .imagenFront {
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }  
+    
+        .numeroTarjeta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 85%;
+            margin: 75px 30px 10px 30px;
+            color: white;
+        }
+        
+        .containerImagenBack {
+            display: flex;
+            width: 447px;
+            height: 247px;
+            background: url("./images/bg-card-back.png");
+            background-repeat: no-repeat;
+            margin-left: 8rem;
+            margin-top: -20rem;
+            border-radius: 10px;
+        }
+        
+        .imagenBack {
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            width: 87%;
+            padding-top: 108px;
+        }
+        
+        .cajaConfirm {
+            background-color: blueviolet;
+            border-radius: 10px;
+            width: 300px;
+            height: 80%;
+            margin-top: 2rem;
+        }
+        
+}
+ @media screen and (min-width: 750px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        min-height: 50vw;
+    }
+    
+    .asideContainer {
+        grid-column: 1 / 2;
+        width: 50%;
+        height: 100vw;
+        background-position: left bottom;
+        background: linear-gradient(300deg,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+    }
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        padding: 250px 10px 250px 0px;
+        text-align: start;
+        width: 75%;
+        height: 50vw;
+    } 
+
+    .containerImagenFront {
+        width: 447px;
+        height: 247px;
+        background: url("./images/bg-card-front.png");
+        background-repeat: no-repeat;
+        margin-top: 10rem;
+        margin-left: 2rem;
+    }
+
+    .imagenFront {
+        display: flex;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    }
+    
+    .numeroTarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 85%;
+        margin: 75px 20px 10px 30px;
+        color: white;
+    }
+    
+    .containerImagenBack {
+        width: 447px;
+        height: 247px;
+        background: url("./images/bg-card-back.png");
+        background-repeat: no-repeat;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+
+    .imagenBack {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        width: 87%;
+        padding-top: 108px;
+    }
+    
+    .cajasDate {
+        width: 150px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .cajaConfirm {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 245px;
+        height: 40px;
+        margin-top: 2rem;
+    }
+}
+@media screen and (min-width:1040px) {
+    
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    
+    .asideContainer {
+        grid-column: 1 / 2;
+        width: 50%;
+        height: 75vw;
+        background-position: left bottom;
+        background: linear-gradient(300deg,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+    }
+    
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        padding: 250px 10px 250px 10px;
+        width: 50%;
+        height: 50vw;
+        text-align: start;
+    }
+    
+    .containerImagenFront {
+        width: 447px;
+        height: 247px;
+        background: url("./images/bg-card-front.png");
+        background-repeat: no-repeat;
+        margin-top: 15rem;
+        margin-left: 10rem;
+    }
+    
+    .imagenFront {
+        display: flex;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    }
+    
+    .numeroTarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 85%;
+        margin: 75px 20px 10px 30px;
+        color: white;
+    }
+    
+    
+    .containerImagenBack {
+        width: 447px;
+        height: 247px;
+        background: url("./images/bg-card-back.png");
+        background-repeat: no-repeat;
+        margin-left: 15rem;
+        margin-top: 2rem;
+    }
+    
+    .imagenBack {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        width: 87%;
+        padding-top: 108px;
+    }
+    
+    .cajasDate {
+        width: 150px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .cajaConfirm {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+    }
+    
+    .placeHolder {
+        opacity: 50%
+    }
+}
