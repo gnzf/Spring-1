@@ -1,15 +1,15 @@
 #formulario {
     position:relative;
     padding: 50px 50px;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     margin: -640px 160px 0 720px;
-    text-align: center;
+    text-align: start;
 }
 
 aside {
     background-position: left bottom;
-    width: 40%;
+    width: 500px;
     height: 1000px;
     background: linear-gradient(300deg,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
 }
@@ -42,3 +42,51 @@ aside {
     margin-left: 15rem;
     margin-top: 2rem;
 }
+/* 
+@media screen and (min-width: 600px) {
+    
+    #formulario {
+        position:relative;
+        padding: 50px 50px;
+        width: 200px;
+        height: 200px;
+        margin: -640px 160px 0 720px;
+        text-align: center;
+    }
+    
+    aside {
+        background-position: left bottom;
+        width: 40%;
+        height: 1000px;
+        background: linear-gradient(300deg,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+    }
+    
+    .cajas {
+        width: 300px;
+        height: 25px;
+    }
+    
+    .cajasDate {
+        width: 150px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .cajaConfirm {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+    }
+    
+    .imagenFront {
+        margin-top: 15rem;
+        margin-left: 10rem;
+    }
+    
+    .imagenBack {
+        margin-left: 15rem;
+        margin-top: 2rem;
+    }
+} */
