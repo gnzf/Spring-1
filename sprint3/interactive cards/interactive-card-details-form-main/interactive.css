@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  @media screen and (min-width: 375px) { 
+    #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50vw;
+        }
+        
+        .asideContainer {
+            width: 100%;
+            height: 50vw;
+            background: url("./images/bg-main-mobile.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+        
+        #formulario {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40%;
+            margin-left: 10%;
+            padding: 0;
+            width: 75%;
+            text-align: start;
+        }
+        
+        
+        .containerImagenFront {
+            width: 315px;
+            height: 170px;
+            background: url("./images/card-logo.svg");
+            background-repeat: 0 90%;
+            margin-top: -19rem;
+            margin-left: 1rem;
+            border-radius: 10px;
+        }
+        
+        .imagenFront {
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }  
+
+        .circuloImagen {
+            margin-top: -28rem;
+            margin-left: 2rem;
+        }
+    
+        .numeroTarjeta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 68%;
+            margin: -180px 0 0 40px;
+            color: white;
+        }
+        
+        .containerImagenBack {
+            display: flex;
+            width: 315px;
+            height: 170px;
+            background-repeat: no-repeat;
+            margin-left: 4rem;
+            margin-top: 2rem;
+            border-radius: 10px;
+        }
+        
+        .imagenBack {
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            width: 87%;
+            padding-top: 108px;
+        }
+        
+        .cajaConfirm {
+            background-color: blueviolet;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+        
+        .placeHolder {
+            opacity: 50%
+        }
+    
+        #warnings{
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            color: red;
+            font-size: 10px;
+        }
+    
+        .sectionVerify{
+            display: none;
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            width: 375px;
+            margin: auto;
+        }
+    
+        .sectionVerify__img{
+            display:block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .sectionVerify__titulo{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 4px;
+            color: black;
+            margin-bottom: 24px;
+        }
+        .sectionVerify__texto{
+            text-align: center;
+            color: grey;
+            font-size: 1.1em;
+            margin-bottom: 24px;
+        }
+        .sectionVerify__btn{
+            background-color: blueviolet;
+            text-align: center;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+    
+        
+}
+  @media screen and (min-width: 500px) { 
+    #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50vw;
+        }
+        
+        .asideContainer {
+            width: 100%;
+            height: 50vw;
+            background: url("./images/bg-main-mobile.png");
+            background-repeat: round;
+        }
+        
+        #formulario {
+            display: flex;
+            flex-direction: column;
+            margin-top: 40%;
+            margin-left: 10%;
+            padding: 0;
+            width: 100%;
+            text-align: start;
+        }
+        
+        
+        .containerImagenFront {
+            width: 380px;
+            height: 205px;
+            background: url("./images/bg-card-front.png");
+            background-repeat: no-repeat;
+            margin-top: -19rem;
+            margin-left: 2rem;
+            border-radius: 10px;
+        }
+        
+        .imagenFront {
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }  
+
+        .circuloImagen {
+            margin-top: -29rem;
+            margin-left: 4rem;
+        }
+    
+        .numeroTarjeta {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 52%;
+            margin: -165px 30px 10px 68px;
+            color: white;
+        }
+        
+        .containerImagenBack {
+            display: flex;
+            width: 380px;
+            height: 205px;
+            background: url("./images/bg-card-back.png");
+            background-repeat: no-repeat;
+            margin-left: 10rem;
+            margin-top: 5rem;
+            border-radius: 10px;
+        }
+        
+        .imagenBack {
+            display: flex;
+            justify-content: flex-end;
+            color: white;
+            width: 87%;
+            padding-top: 108px;
+        }
+        
+        .cajaConfirm {
+            background-color: blueviolet;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+        
+        .placeHolder {
+            opacity: 50%
+        }
+    
+        .warnings{
+            width: 300px;
+            text-align: center;
+            margin: auto;
+            color: red;
+            font-size: 10px;
+        }
+    
+        .sectionVerify{
+            display: none;
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            width: 375px;
+            margin: auto;
+        }
+    
+        .sectionVerify__img{
+            display:block;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .sectionVerify__titulo{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: 4px;
+            color: black;
+            margin-bottom: 24px;
+        }
+        .sectionVerify__texto{
+            text-align: center;
+            color: grey;
+            font-size: 1.1em;
+            margin-bottom: 24px;
+        }
+        .sectionVerify__btn{
+            background-color: blueviolet;
+            text-align: center;
+            border-radius: 10px;
+            width: 300px;
+            height: 40px;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+    
+}
+ @media screen and (min-width: 750px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        min-height: 50vw;
+    }
+    
+    .asideContainer {
+        grid-column: 1 / 2;
+        width: 50%;
+        height: 90vw;
+        background: url("./images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+    
+    }
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        padding: 150px 10px 250px 0px;
+        text-align: start;
+        width: 75%;
+        height: 50vw;
+    } 
+
+    .containerImagenFront {
+        width: 447px;
+        height: 247px;
+        background: url("./images/bg-card-front.png");
+        background-repeat: no-repeat;
+        margin-top: -40rem;
+        margin-left: 6rem;
+    }
+
+    .imagenFront {
+        display: flex;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .circuloImagen {
+        margin-top: -52rem;
+        margin-left: 10rem;
+    }
+    
+    .numeroTarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 350px;
+        margin: -325px 0px 0px 148px;
+        color: white;
+    }
+    
+    .containerImagenBack {
+        width: 447px;
+        height: 247px;
+        background: url("./images/bg-card-back.png");
+        background-repeat: no-repeat;
+        margin-left: 10rem;
+        margin-top: 22rem;
+    }
+
+    .imagenBack {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        width: 380px;
+        margin: -245px 0px 0px 160px;
+    }
+    
+    .cajasDate {
+        width: 150px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .cajaConfirm {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    
+    .placeHolder {
+        opacity: 50%
+    }
+
+    .warnings{
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        color: red;
+        font-size: 10px;
+    }
+
+    .sectionVerify{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        margin: auto;
+    }
+
+    .sectionVerify__img{
+        display:block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .sectionVerify__titulo{
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: black;
+        margin-bottom: 24px;
+    }
+    .sectionVerify__texto{
+        text-align: center;
+        color: grey;
+        font-size: 1.1em;
+        margin-bottom: 24px;
+    }
+    .sectionVerify__btn{
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+}
+@media screen and (min-width:1040px) {
+    
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    
+    .asideContainer {
+        grid-column: 1 / 2;
+        width: 50%;
+        background-position: left bottom;
+        background: url("./images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 90% 0;
+    }
+    
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        padding: 0px 10px 250px 10px;
+        width: 50%;
+        height: 50vw;
+        text-align: start;
+    }
+    
+    .containerImagenFront {
+        width: 447px;
+        height: 247px;
+        background: url("./images/card-logo.svg");
+        margin-top: -40rem;
+        margin-left: 8rem;
+    }
+    
+    .imagenFront {
+        display: flex;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .circuloImagen {
+        margin-top: -52rem;
+        margin-left: 10rem;
+    }
+    
+    .numeroTarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 380px;
+        margin: -325px 0px 0px 165px;
+        color: white;
+    }
+    
+    
+    .containerImagenBack {
+        width: 447px;
+        height: 247px;
+        background-repeat: no-repeat;
+        margin-left: 14rem;
+        margin-top: 22rem;
+    }
+    
+    .imagenBack {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        width: 380px;
+        margin: -245px 0px 0px 240px;
+    }
+    
+    .cajasDate {
+        width: 150px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .cajaConfirm {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    
+    .placeHolder {
+        opacity: 50%
+    }
+
+    .warnings{
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        color: red;
+        font-size: 10px;
+    }
+
+    .sectionVerify{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        margin: auto;
+    }
+
+    .sectionVerify__img{
+        display:block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .sectionVerify__titulo{
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: black;
+        margin-bottom: 24px;
+    }
+    .sectionVerify__texto{
+        text-align: center;
+        color: grey;
+        font-size: 1.1em;
+        margin-bottom: 24px;
+    }
+    .sectionVerify__btn{
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+}
+@media screen and (min-width:1240px) {
+    
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    
+    .asideContainer {
+        grid-column: 1 / 2;
+        width: 50%;
+        background-position: left bottom;
+        background: url("./images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 90% 0;
+    }
+    
+    #formulario {
+        /* display:none; */
+        display: flex;
+        flex-direction: column;
+        grid-column: 2 / 3;
+        padding: 0px 10px 250px 10px;
+        width: 50%;
+        height: 50vw;
+        text-align: start;
+    }
+    
+    .containerImagenFront {
+        width: 447px;
+        height: 247px;
+        background: url("./images/card-logo.svg");
+        margin-top: -40rem;
+        margin-left: 8rem;
+    }
+    
+    .imagenFront {
+        display: flex;
+        margin-left: 2rem;
+        padding-top: 1.5rem;
+    }
+    
+    .circuloImagen {
+        margin-top: -52rem;
+        margin-left: 10rem;
+    }
+
+
+    .numeroTarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 380px;
+        margin: -325px 0px 0px 165px;
+        color: white;
+    }
+    
+    
+    .containerImagenBack {
+        width: 447px;
+        height: 247px;
+        background-repeat: no-repeat;
+        margin-left: 14rem;
+        margin-top: 22rem;
+    }
+    
+    .imagenBack {
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+        width: 380px;
+        margin: -245px 0px 0px 240px;
+    }
+    
+    .cajasDate {
+        width: 50px;
+        height: 25px;
+        display: inline-block;
+    }
+    
+    .cajaConfirm {
+        background-color: blueviolet;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    
+    .placeHolder {
+        opacity: 50%
+    }
+
+    .warnings{
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        color: red;
+        font-size: 10px;
+    }
+
+    .sectionVerify{
+        display: none;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        margin: auto;
+    }
+
+    .sectionVerify__img{
+        display:block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .sectionVerify__titulo{
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 4px;
+        color: black;
+        margin-bottom: 24px;
+    }
+    .sectionVerify__texto{
+        text-align: center;
+        color: grey;
+        font-size: 1.1em;
+        margin-bottom: 24px;
+    }
+    .sectionVerify__btn{
+        background-color: blueviolet;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        height: 40px;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+
+}

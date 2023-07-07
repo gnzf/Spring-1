@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="interactive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div class="asideContainer">
+            <div>
+                <img class="containerImagenBack" src="./images/bg-card-back.png" alt=""> 
+                <p id="cvcCard" class="imagenBack">000</p>
+            </div>
+            
+
+            <div>
+                <img class="containerImagenFront" src="./images/bg-card-front.png" alt="imagen tarjeta delante">
+                <img class="circuloImagen" src="images/card-logo.svg" alt="circulo blanco">
+                <div class="numeroTarjeta">
+                    <h1 class="numberCard">0000 0000 0000 0000</h1>
+                    <p class="nameCard">JANE APPLASEED</p> 
+                    <p ><span class="dateMonth">00</span>/<span class="dateYear">00</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="formulario">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">CARDHOLDER NAME</label>
+                <input type="text" class="form-control placeHolder" id="nameImput" placeholder="e.g Jane Applessed">
+                <div id="warnings" class="nameImput_error"></div>
+            </div>
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">CARD NUMBER</label>
+                <input type="text" class="form-control placeHolder" id="numberImput" placeholder="e.g 1234 5678 9123 0000">
+                <div id="warnings" class="numberImput_error"></div>
+            </div>
+
+            <form id=form class="row g-3 formulario">
+                <div class="col-6">
+                  <label class="form-label">EXP.DATE (MM/YY)</label>
+                </div>
+                <div class="col-6">
+                  <label class="form-label">CVC</label>
+                </div>
+                <div class="col-6 d-flex">
+                    <input id="month" type="text" class="form-control placeHolder" placeholder="MM" maxlength="2">
+                    <input id="year" type="text" class="form-control placeHolder" placeholder="YY" maxlength="2">
+                </div>
+                <div class="col-4">
+                    <input id="password" type="password" class="form-control placeHolder" placeholder="e.g 123" maxlength="3">
+                </div>
+                <div class="d-flex align-items-start">
+                    <div id="warnings" class="monthInput_error"></div>
+                    <div id="warnings" class="yearInput_error"></div>
+                    <div id="warnings" class="cvcInput_error"></div>
+                </div>
+                <div>
+                    <input id="confirmBox" class="cajaConfirm align-items-center" type="submit" value="Confirm">
+                    <p class="warnings" id="warnings">
+                </div>
+            </form>
+        </div>
+        <section class="sectionVerify">
+            <img class="sectionVerify__img" src="images/icon-complete.svg" alt="Imagen de completado">
+            <h1 class="sectionVerify__titulo">Thank You!</h1>
+            <p class="sectionVerify__texto">We've added your card details</p>
+            <button class="sectionVerify__btn">Continue</button>
+        </section>
+    </div>
+    <script src="./interactive_cards.js"></script>
+</body>
+</html>
